@@ -31,3 +31,7 @@ Route::resource('usuarios', 'UsuarioAPIController');
 Route::resource('materias', 'MateriaAPIController');
 
 Route::resource('asistencias', 'AsistenciaAPIController');
+
+
+
+Route::resource('observacions', 'ObservacionAPIController');

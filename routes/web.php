@@ -33,3 +33,7 @@ Route::resource('usuarios', 'UsuarioController');
 Route::resource('materias', 'MateriaController');
 
 Route::resource('asistencias', 'AsistenciaController');
+
+
+
+Route::resource('observacions', 'ObservacionController');
