@@ -8,13 +8,14 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Observacion
  * @package App\Models
- * @version June 4, 2018, 7:00 am UTC
+ * @version June 4, 2018, 7:10 am UTC
  *
  * @property string tipoTutoria
- * @property integer inquietudesSolucionadas
+ * @property string inquietudesSolucionadas
  * @property integer tratoDelTutor
- * @property integer tiempoSuficiente
- * @property integer tutoriaDaHerramientas
+ * @property string tiempoSuficiente
+ * @property string tutoriaDaHerramientas
+ * @property string comentarios
  * @property integer tutor_id
  */
 class Observacion extends Model
@@ -33,6 +34,7 @@ class Observacion extends Model
         'tratoDelTutor',
         'tiempoSuficiente',
         'tutoriaDaHerramientas',
+        'comentarios',
         'tutor_id'
     ];
 
@@ -43,10 +45,11 @@ class Observacion extends Model
      */
     protected $casts = [
         'tipoTutoria' => 'string',
-        'inquietudesSolucionadas' => 'integer',
+        'inquietudesSolucionadas' => 'string',
         'tratoDelTutor' => 'integer',
-        'tiempoSuficiente' => 'integer',
-        'tutoriaDaHerramientas' => 'integer',
+        'tiempoSuficiente' => 'string',
+        'tutoriaDaHerramientas' => 'string',
+        'comentarios' => 'string',
         'tutor_id' => 'integer'
     ];
 

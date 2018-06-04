@@ -36,4 +36,6 @@ Route::resource('asistencias', 'AsistenciaAPIController');
 
 
 
+
+
 Route::resource('observacions', 'ObservacionAPIController');

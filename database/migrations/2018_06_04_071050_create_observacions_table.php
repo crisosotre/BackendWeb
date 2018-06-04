@@ -16,10 +16,11 @@ class CreateObservacionsTable extends Migration
         Schema::create('observacions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('tipoTutoria');
-            $table->integer('inquietudesSolucionadas');
+            $table->string('inquietudesSolucionadas');
             $table->integer('tratoDelTutor');
-            $table->integer('tiempoSuficiente');
-            $table->integer('tutoriaDaHerramientas');
+            $table->string('tiempoSuficiente');
+            $table->string('tutoriaDaHerramientas');
+            $table->string('comentarios');
             $table->integer('tutor_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();

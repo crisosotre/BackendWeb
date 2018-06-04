@@ -34,6 +34,12 @@
     <p>{!! $observacion->tutoriaDaHerramientas !!}</p>
 </div>
 
+<!-- Comentarios Field -->
+<div class="form-group">
+    {!! Form::label('comentarios', 'Comentarios:') !!}
+    <p>{!! $observacion->comentarios !!}</p>
+</div>
+
 <!-- Tutor Id Field -->
 <div class="form-group">
     {!! Form::label('tutor_id', 'Tutor Id:') !!}

@@ -38,4 +38,6 @@ Route::resource('asistencias', 'AsistenciaController');
 
 
 
+
+
 Route::resource('observacions', 'ObservacionController');

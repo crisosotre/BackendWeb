@@ -6,6 +6,7 @@
         <th>Tratodeltutor</th>
         <th>Tiemposuficiente</th>
         <th>Tutoriadaherramientas</th>
+        <th>Comentarios</th>
         <th>Tutor Id</th>
             <th colspan="3">Action</th>
         </tr>
@@ -18,6 +19,7 @@
             <td>{!! $observacion->tratoDelTutor !!}</td>
             <td>{!! $observacion->tiempoSuficiente !!}</td>
             <td>{!! $observacion->tutoriaDaHerramientas !!}</td>
+            <td>{!! $observacion->comentarios !!}</td>
             <td>{!! $observacion->tutor_id !!}</td>
             <td>
                 {!! Form::open(['route' => ['observacions.destroy', $observacion->id], 'method' => 'delete']) !!}

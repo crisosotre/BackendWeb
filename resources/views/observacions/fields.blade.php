@@ -7,7 +7,7 @@
 <!-- Inquietudessolucionadas Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('inquietudesSolucionadas', 'Inquietudessolucionadas:') !!}
-    {!! Form::number('inquietudesSolucionadas', null, ['class' => 'form-control']) !!}
+    {!! Form::text('inquietudesSolucionadas', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Tratodeltutor Field -->
@@ -19,13 +19,19 @@
 <!-- Tiemposuficiente Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tiempoSuficiente', 'Tiemposuficiente:') !!}
-    {!! Form::number('tiempoSuficiente', null, ['class' => 'form-control']) !!}
+    {!! Form::text('tiempoSuficiente', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Tutoriadaherramientas Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tutoriaDaHerramientas', 'Tutoriadaherramientas:') !!}
-    {!! Form::number('tutoriaDaHerramientas', null, ['class' => 'form-control']) !!}
+    {!! Form::text('tutoriaDaHerramientas', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Comentarios Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('comentarios', 'Comentarios:') !!}
+    {!! Form::text('comentarios', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Tutor Id Field -->

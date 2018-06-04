@@ -8,7 +8,7 @@ use InfyOm\Generator\Common\BaseRepository;
 /**
  * Class ObservacionRepository
  * @package App\Repositories
- * @version June 4, 2018, 7:00 am UTC
+ * @version June 4, 2018, 7:10 am UTC
  *
  * @method Observacion findWithoutFail($id, $columns = ['*'])
  * @method Observacion find($id, $columns = ['*'])
@@ -25,6 +25,7 @@ class ObservacionRepository extends BaseRepository
         'tratoDelTutor',
         'tiempoSuficiente',
         'tutoriaDaHerramientas',
+        'comentarios',
         'tutor_id'
     ];
 
