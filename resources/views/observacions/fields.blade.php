@@ -4,10 +4,22 @@
     {!! Form::text('tipoTutoria', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Inquietudessolucionadas Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('inquietudesSolucionadas', 'Inquietudessolucionadas:') !!}
+    {!! Form::number('inquietudesSolucionadas', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Tratodeltutor Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('tratoDelTutor', 'Tratodeltutor:') !!}
+    {!! Form::number('tratoDelTutor', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Tiemposuficiente Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tiempoSuficiente', 'Tiemposuficiente:') !!}
-    {!! Form::text('tiempoSuficiente', null, ['class' => 'form-control']) !!}
+    {!! Form::number('tiempoSuficiente', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Tutoriadaherramientas Field -->

@@ -43,7 +43,9 @@ trait MakeObservacionTrait
 
         return array_merge([
             'tipoTutoria' => $fake->word,
-            'tiempoSuficiente' => $fake->word,
+            'inquietudesSolucionadas' => $fake->randomDigitNotNull,
+            'tratoDelTutor' => $fake->randomDigitNotNull,
+            'tiempoSuficiente' => $fake->randomDigitNotNull,
             'tutoriaDaHerramientas' => $fake->randomDigitNotNull,
             'tutor_id' => $fake->randomDigitNotNull,
             'created_at' => $fake->word,

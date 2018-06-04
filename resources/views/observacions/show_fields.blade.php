@@ -10,6 +10,18 @@
     <p>{!! $observacion->tipoTutoria !!}</p>
 </div>
 
+<!-- Inquietudessolucionadas Field -->
+<div class="form-group">
+    {!! Form::label('inquietudesSolucionadas', 'Inquietudessolucionadas:') !!}
+    <p>{!! $observacion->inquietudesSolucionadas !!}</p>
+</div>
+
+<!-- Tratodeltutor Field -->
+<div class="form-group">
+    {!! Form::label('tratoDelTutor', 'Tratodeltutor:') !!}
+    <p>{!! $observacion->tratoDelTutor !!}</p>
+</div>
+
 <!-- Tiemposuficiente Field -->
 <div class="form-group">
     {!! Form::label('tiempoSuficiente', 'Tiemposuficiente:') !!}

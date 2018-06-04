@@ -18,6 +18,7 @@
 </li>
 
 
+
 <li class="{{ Request::is('observacions*') ? 'active' : '' }}">
     <a href="{!! route('observacions.index') !!}"><i class="fa fa-edit"></i><span>Observacions</span></a>
 </li>

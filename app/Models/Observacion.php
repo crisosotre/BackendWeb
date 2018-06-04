@@ -8,10 +8,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Observacion
  * @package App\Models
- * @version June 3, 2018, 11:38 pm UTC
+ * @version June 4, 2018, 7:00 am UTC
  *
  * @property string tipoTutoria
- * @property string tiempoSuficiente
+ * @property integer inquietudesSolucionadas
+ * @property integer tratoDelTutor
+ * @property integer tiempoSuficiente
  * @property integer tutoriaDaHerramientas
  * @property integer tutor_id
  */
@@ -27,6 +29,8 @@ class Observacion extends Model
 
     public $fillable = [
         'tipoTutoria',
+        'inquietudesSolucionadas',
+        'tratoDelTutor',
         'tiempoSuficiente',
         'tutoriaDaHerramientas',
         'tutor_id'
@@ -39,7 +43,9 @@ class Observacion extends Model
      */
     protected $casts = [
         'tipoTutoria' => 'string',
-        'tiempoSuficiente' => 'string',
+        'inquietudesSolucionadas' => 'integer',
+        'tratoDelTutor' => 'integer',
+        'tiempoSuficiente' => 'integer',
         'tutoriaDaHerramientas' => 'integer',
         'tutor_id' => 'integer'
     ];
@@ -50,8 +56,7 @@ class Observacion extends Model
      * @var array
      */
     public static $rules = [
-        'tipoTutoria' => 'resolvioInquietudes string text',
-        'tiempoSuficiente' => 'tratoTutor integer number'
+        
     ];
 
     

@@ -8,7 +8,7 @@ use InfyOm\Generator\Common\BaseRepository;
 /**
  * Class ObservacionRepository
  * @package App\Repositories
- * @version June 3, 2018, 11:38 pm UTC
+ * @version June 4, 2018, 7:00 am UTC
  *
  * @method Observacion findWithoutFail($id, $columns = ['*'])
  * @method Observacion find($id, $columns = ['*'])
@@ -21,6 +21,8 @@ class ObservacionRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'tipoTutoria',
+        'inquietudesSolucionadas',
+        'tratoDelTutor',
         'tiempoSuficiente',
         'tutoriaDaHerramientas',
         'tutor_id'

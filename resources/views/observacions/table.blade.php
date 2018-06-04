@@ -2,6 +2,8 @@
     <thead>
         <tr>
             <th>Tipotutoria</th>
+        <th>Inquietudessolucionadas</th>
+        <th>Tratodeltutor</th>
         <th>Tiemposuficiente</th>
         <th>Tutoriadaherramientas</th>
         <th>Tutor Id</th>
@@ -12,6 +14,8 @@
     @foreach($observacions as $observacion)
         <tr>
             <td>{!! $observacion->tipoTutoria !!}</td>
+            <td>{!! $observacion->inquietudesSolucionadas !!}</td>
+            <td>{!! $observacion->tratoDelTutor !!}</td>
             <td>{!! $observacion->tiempoSuficiente !!}</td>
             <td>{!! $observacion->tutoriaDaHerramientas !!}</td>
             <td>{!! $observacion->tutor_id !!}</td>
